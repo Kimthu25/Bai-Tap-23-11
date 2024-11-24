@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diện tích các hình học</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tính diện tích các hình </h1>
+        
+        <div class="hcn">
+            <h2>Diện tích hình chữ nhật</h2>
+            <label for="chieudai">Chiều dài: </label>
+            <input type="number" id="chieudai" placeholder="Nhập chiều dài">
+            <label for="chieurong">Chiều rộng: </label>
+            <input type="number" id="chieurong" placeholder="Nhập chiều rộng">
+            <button onclick="calculateRectangleArea()">Tính diện tích</button>
+            <p id="dientich_hcn">Diện tích: </p>
+        </div>
+
+        <div class="tamgiac">
+            <h2>Diện tích hình tam giác</h2>
+            <label for="day">Cạnh đáy: </label>
+            <input type="number" id="day" placeholder="Nhập độ dài cạnh đáy">
+            <label for="ccao">Chiều cao: </label>
+            <input type="number" id="ccao" placeholder="Nhập chiều cao">
+            <button onclick="calculateTriangleArea()">Tính diện tích</button>
+            <p id="dientich_tg">Diện tích: </p>
+        </div>
+
+        <div class="hv">
+            <h2>Diện tích hình vuông</h2>
+            <label for="canh">Độ dài cạnh: </label>
+            <input type="number" id="canh" placeholder="Nhập độ dài cạnh">
+            <button onclick="calculateSquareArea()">Tính diện tích</button>
+            <p id="dientich_hv">Diện tích: </p>
+        </div>
+    </div>
+</body>
+</html>
